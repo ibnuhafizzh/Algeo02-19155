@@ -77,7 +77,7 @@ for i in range (len(array_of_words)):
 
 sim_1 = dot_1/math.sqrt(sumq*sum1) 
 sim_2 = dot_2/math.sqrt(sumq*sum2)
-sim_3 = dot_3/math.sqrt(sum1*sum2) 
+sim_3 = dot_3/math.sqrt(sumq*sum3) 
 
 
 sim = {'doc 1': sim_1, 'doc 2': sim_2, 'doc 3': sim_3}
