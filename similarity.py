@@ -16,6 +16,8 @@ import os
 factory = StemmerFactory()
 stemmer = factory.create_stemmer()
 
+os.getcwd()
+
 #Baca file & Stemming
 a = open(os.path.join('doc',"doc1.txt"), "r")
 df1 = a.read()
