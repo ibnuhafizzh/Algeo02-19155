@@ -13,10 +13,10 @@ from scipy.sparse import csr_matrix
 import pandas as pd
 import os
 
+os.getcwd()
+
 factory = StemmerFactory()
 stemmer = factory.create_stemmer()
-
-os.getcwd()
 
 #Baca file & Stemming
 a = open(os.path.join('doc',"doc1.txt"), "r")
@@ -242,22 +242,102 @@ termquery = {}
 
 
 for w in termq:
-        termquery[w] = termq.count(w)
-        term1[w] = texterm.count(w)
+
+  if w in termquery:
+    if termquery[w] != 0:
+      termquery[w]
+  else:
+    termquery[w] = termq.count(w)
+
+  if w in term1:
+    if term1[w] != 0:
+      term1[w]
+  else :
+    term1[w] = texterm.count(w)
+  
+  if w in term2:
+    if term2[w] != 0:
+      term2[w]
+  else:
         term2[w] = texterm2.count(w)
+
+  if w in term3:
+    if term3[w] != 0:
+      term3[w]
+  else:
         term3[w] = texterm3.count(w)
+    
+  if w in term4:
+    if term4[w] != 0:
+      term4[w]
+  else:
         term4[w] = texterm4.count(w)
+    
+  if w in term5:
+    if term5[w] != 0:
+      term5[w]
+  else:
         term5[w] = texterm5.count(w)
+    
+  if w in term6:
+    if term6[w] != 0:
+      term6[w]
+  else:
         term6[w] = texterm6.count(w)
+    
+  if w in term7:
+    if term7[w] != 0:
+      term7[w]
+  else:
         term7[w] = texterm7.count(w)
+    
+  if w in term8:
+    if term8[w] != 0:
+      term8[w]
+  else:
         term8[w] = texterm8.count(w)
+    
+  if w in term9:
+    if term9[w] != 0:
+      term9[w]
+  else:
         term9[w] = texterm9.count(w)
+    
+  if w in term10:
+    if term10[w] != 0:
+      term10[w]
+  else:
         term10[w] = texterm10.count(w)
-        term11[w] = texterm11.count(w)
+
+  if w in term11:
+    if term11[w] != 0:
+      term11[w]
+  else:
+    term11[w] = texterm11.count(w)
+
+  if w in term12:
+    if term12[w] != 0:
+      term12[w]
+  else:
         term12[w] = texterm12.count(w)
+    
+  if w in term13:
+    if term13[w] != 0:
+      term13[w]
+  else:
         term13[w] = texterm13.count(w)
+    
+  if w in term14:
+    if term14[w] != 0:
+      term14[w]
+  else:
         term14[w] = texterm14.count(w)
-        term15[w] = texterm15.count(w)
+    
+  if w in term15:
+    if term15[w] != 0:
+      term15[w]
+  else:
+    term15[w] = texterm15.count(w)
 
 termvalue1 = list(term1.values())
 termvalue2 = list(term2.values())
@@ -280,7 +360,12 @@ matrix_of_term = [termqvalues, termvalue1, termvalue2, termvalue3, termvalue4, t
                   termvalue6, termvalue7, termvalue8, termvalue9, termvalue10,
                   termvalue11, termvalue12, termvalue13, termvalue14, termvalue15]
 
+term_coloumns = []
+for w in termq:
+  if w not in term_coloumns:
+    term_coloumns.append(w)
+
 datframe = pd.DataFrame(np.array(matrix_of_term),
-                        columns=termq, index=['query', 'doc1', 'doc2', 'doc3', 'doc4', 'doc5', 'doc6', 'doc7', 'doc8', 'doc9', 'doc10', 'doc11', 'doc12', 'doc13', 'doc14', 'doc15'])
+                        columns=kolomterm, index=['query', 'doc1', 'doc2', 'doc3', 'doc4', 'doc5', 'doc6', 'doc7', 'doc8', 'doc9', 'doc10', 'doc11', 'doc12', 'doc13', 'doc14', 'doc15'])
 print("matriks term :")    
 print(datframe.T)
