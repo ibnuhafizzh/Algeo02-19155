@@ -11,82 +11,83 @@ from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 from collections import Counter
 from scipy.sparse import csr_matrix
 import pandas as pd
+import os
 
 factory = StemmerFactory()
 stemmer = factory.create_stemmer()
 
 #Baca file & Stemming
-a = open("doc1.txt", "r")
+a = open(os.path.join('doc',"doc1.txt"), "r")
 df1 = a.read()
 textstem = stemmer.stem(df1)
 texterm = textstem.split(' ')
 
-b = open("doc2.txt", "r")
+b = open(os.path.join('doc',"doc2.txt"), "r")
 df2 = b.read()
 textstem2 = stemmer.stem(df2)
 texterm2 = textstem2.split(' ')
 
-c = open("doc3.txt", "r")
+c = open(os.path.join('doc',"doc3.txt"), "r")
 df3 = c.read()
 textstem3 = stemmer.stem(df3)
 texterm3 = textstem3.split(' ')
 
-d = open("doc4.txt", "r")
+d = open(os.path.join('doc',"doc4.txt"), "r")
 df4 = d.read()
 textstem4 = stemmer.stem(df4)
 texterm4 = textstem4.split(' ')
 
-e = open("doc5.txt", "r")
+e = open(os.path.join('doc',"doc5.txt"), "r")
 df5 = e.read()
 textstem5 = stemmer.stem(df5)
 texterm5 = textstem5.split(' ')
 
-f = open("doc6.txt", "r")
+f = open(os.path.join('doc',"doc6.txt"), "r")
 df6 = f.read()
 textstem6 = stemmer.stem(df6)
 texterm6 = textstem6.split(' ')
 
-g = open("doc7.txt", "r")
+g = open(os.path.join('doc',"doc7.txt"), "r")
 df7 = g.read()
 textstem7 = stemmer.stem(df7)
 texterm7 = textstem7.split(' ')
 
-h = open("doc8.txt", "r")
+h = open(os.path.join('doc',"doc8.txt"), "r")
 df8 = h.read()
 textstem8 = stemmer.stem(df8)
 texterm8 = textstem8.split(' ')
 
-i = open("doc9.txt", "r")
+i = open(os.path.join('doc',"doc9.txt"), "r")
 df9 = i.read()
 textstem9 = stemmer.stem(df9)
 texterm9 = textstem9.split(' ')
 
-j = open("doc10.txt", "r")
+j = open(os.path.join('doc',"doc10.txt"), "r")
 df10 = j.read()
 textstem10 = stemmer.stem(df10)
 texterm10 = textstem10.split(' ')
 
-k = open("doc11.txt", "r")
+k = open(os.path.join('doc',"doc11.txt"), "r")
 df11 = k.read()
 textstem11 = stemmer.stem(df11)
 texterm11 = textstem11.split(' ')
 
-l = open("doc12.txt", "r")
+l = open(os.path.join('doc',"doc12.txt"), "r")
 df12 = l.read()
 textstem12 = stemmer.stem(df12)
 texterm12 = textstem12.split(' ')
 
-m = open("doc13.txt", "r")
+m = open(os.path.join('doc',"doc13.txt"), "r")
 df13 = m.read()
 textstem13 = stemmer.stem(df13)
 texterm13 = textstem13.split(' ')
 
-n = open("doc14.txt", "r")
+n = open(os.path.join('doc',"doc14.txt"), "r")
 df14 = n.read()
 textstem14 = stemmer.stem(df14)
 texterm14 = textstem14.split(' ')
 
-o = open("doc15.txt", "r")
+o = open(os.path.join('doc',"doc15.txt"), "r")
 df15 = o.read()
 textstem15 = stemmer.stem(df15)
 texterm15 = textstem15.split(' ')
