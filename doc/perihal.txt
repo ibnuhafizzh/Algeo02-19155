@@ -1,0 +1,19 @@
+Sabeb Search Engine
+
+Terima kasih karena sudah mengunjungi sabeb search engine. Search engine kami dibuat dengan meggunakan bahasa pemorgraman python dan memanfaatkan beberapa library yang ada pada bahasa pemorgaman python. Search engine kami memanfaatkan cosine similarity. Cosine similarity merupakan aplikasi dari dot product pada vektor. Pada search engine kami, cosine similarity berguna untuk mengurutkan dokumen yang memiliki kata terbanyak yang ada pada query atau search key yang dimasukkan.
+
+
+
+How to Use?
+
+1. Masukkan query atau search key yang diinginkan.
+2. Akan muncul dokumen yang berurutan berdasarkan kata terbanyak yang sesuai dengan query.
+
+3. Pilih dokumen yang diinginkan.
+
+
+
+
+About Us
+
+Kami merupakan mahasiswa semester 3 Teknik Informatika ITB. Search engine ini merupakan salah satu tugas besar mata kuliah Aljabar Linier dan Geometri. Nama kelompok kami ada Sabeb. Kelompok kami beranggotakan Giovani Anggasta (NIM 13519155), M. Ibnu Syah Hafizh (NIM 13519177), dan Farhan Fadillah Rafi (NIM 13519204).
