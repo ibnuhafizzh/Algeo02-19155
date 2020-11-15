@@ -30,14 +30,14 @@ python3 manage.py runserver
 ```
 Jika tidak bisa dijalankan dan terdapat pesan cinta seperti ini ```"You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions."``` Jangan panik kawan..
 
-Kamu kekurangan amunisi, coba ikutin ini
+Kamu kekurangan amunisi, coba lakukan ini
 
 ```bash
 python3 manage.py migrate
 ```
 kemudian ketik ulang  ``` python3 manage.py runserver```
 
-Apabila Berhasil akan diperoleh link suci menuju Sabeb Search Engine.
+Apabila berhasil akan diperoleh link suci menuju Sabeb Search Engine.
 
 ```bash
 Starting development server at (Link)
