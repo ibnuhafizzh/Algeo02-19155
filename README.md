@@ -1,23 +1,22 @@
-# SABEB SEARCH ENGINE
+# SABEB  SEARCH  ENGINE
 
 Search engine ini merupakan salah satu project sekaligus tugas besar mata kuliah IF2123 Aljabar Linier dan Geometri. Project ini disusun oleh kelompok Sabeb sehingga project ini kami namakan Sabeb Search Engine. Kelompok kami beranggotakan Giovani Anggasta (NIM 13519155), M. Ibnu Syah Hafizh (NIM 13519177), dan Farhan Fadillah Rafi (NIM 13519204).
 
-#Setup & Installation in MacOs 
+## Setup & Installation in MacOs 
 
-Sebelum menikmati experience dan berselancar di Sabeb Search Engine, kamu harus menyiapkan beberapa barang wajib
+Sebelum menikmati experience dan berselancar di Sabeb Search Engine, kamu harus menyiapkan beberapa barang wajib. Pastikan Pythonnya yang terbaru yaak (kalau masih yg lama silakan menyesuaikan).
 
 ```bash
-python -m venv Env
-Env\Scripts\activate.bat
+python3 -m venv Env
+source Env\bin\activate
 python -m pip install --upgrade pip
-pip install django
-pip install numpy
-pip install sastrawi
-pip install scipy
-pip install pandas
+pip3 install numpy
+pip3 install sastrawi
+pip3 install scipy
+pip3 install pandas
 ```
 
-#Usage
+## Usage
 
 Setelah siap semua persediaan, saatnya mulai!!
 
