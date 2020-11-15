@@ -26,16 +26,31 @@ Setelah siap semua persediaan, saatnya mulai!!
 
 ```bash
 cd src
+
+macOS:
 python3 manage.py runserver
+
+Windows:
+manage.py runserver
 ```
 Jika tidak bisa dijalankan dan terdapat pesan cinta seperti ini ```"You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions."``` Jangan panik kawan..
 
 Kamu kekurangan amunisi, coba lakukan ini
 
 ```bash
+mac:
 python3 manage.py migrate
+
+windows:
+manage.py migrate
 ```
-kemudian ketik ulang  ``` python3 manage.py runserver```
+kemudian ketik ulang  ``` 
+mac:
+python3 manage.py runserver
+
+windows:
+manage.py runserver
+```
 
 Apabila berhasil akan diperoleh link suci menuju Sabeb Search Engine.
 
