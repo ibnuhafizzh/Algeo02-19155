@@ -10,6 +10,7 @@ Sebelum menikmati experience dan berselancar di Sabeb Search Engine, kamu harus 
 python -m venv Env
 Env\Scripts\activate.bat
 python -m pip install --upgrade pip
+pip install django
 pip install numpy
 pip install sastrawi
 pip install scipy
