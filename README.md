@@ -2,7 +2,7 @@
 
 Search engine ini merupakan salah satu project sekaligus tugas besar mata kuliah IF2123 Aljabar Linier dan Geometri. Project ini disusun oleh kelompok Sabeb sehingga project ini kami namakan Sabeb Search Engine. Kelompok kami beranggotakan Giovani Anggasta (NIM 13519155), M. Ibnu Syah Hafizh (NIM 13519177), dan Farhan Fadillah Rafi (NIM 13519204).
 
-##Setup & Installation in MacOs 
+#Setup & Installation in MacOs 
 
 Sebelum menikmati experience dan berselancar di Sabeb Search Engine, kamu harus menyiapkan beberapa barang wajib
 
@@ -16,7 +16,7 @@ pip install scipy
 pip install pandas
 ```
 
-##Usage
+#Usage
 
 Setelah siap semua persediaan, saatnya mulai!!
 
