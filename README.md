@@ -4,7 +4,13 @@ Search engine ini merupakan salah satu project sekaligus tugas besar mata kuliah
 
 ## Setup & Installation in MacOs 
 
-Sebelum menikmati experience dan berselancar di Sabeb Search Engine, kamu harus menyiapkan beberapa barang wajib. Pastikan Pythonnya yang terbaru yaak (kalau masih yg lama silakan menyesuaikan).
+Pertama-tama buka terminal dan ketik ini dulu, jangan lupa
+
+```bash
+git clone https://github.com/ibnuhafizzh/Tubes2-ALGEO.git
+```
+
+Sebelum menikmati experience dan berselancar di Sabeb Search Engine, kamu harus menyiapkan beberapa barang wajib. Pastikan Python & Pip yang terbaru yaak (kalau masih yg lama silakan menyesuaikan).
 
 ```bash
 pip3 install django
@@ -22,9 +28,9 @@ Setelah siap semua persediaan, saatnya mulai!!
 cd src
 manage.py runserver
 ```
-Jika tidak bisa dijalankan dan terdapat pesan cinta seperti ini "You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions." Jangan panik kawan..
+Jika tidak bisa dijalankan dan terdapat pesan cinta seperti ini ```"You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions."``` Jangan panik kawan..
 
-kamu kekurangan amunisi, coba ikutin ini
+Kamu kekurangan amunisi, coba ikutin ini
 
 ```bash
 python manage.py migrate
@@ -34,7 +40,7 @@ kemudian ketik ulang  ``` manage.py runserver```
 Apabila Berhasil akan diperoleh link suci menuju Sabeb Search Engine.
 
 ```bash
-Starting development server at http://127.0.0.1:8000/ (Link)
+Starting development server at (Link)
 ```
-Selamat menikmati!!! :V
+Selamat menikmati!!! :D
 
