@@ -143,28 +143,29 @@ def index(request):
         doc = [query, textstem, textstem2, textstem3, textstem4, textstem5,
                textstem6, textstem7, textstem8, textstem9, textstem10,
                textstem11, textstem12, textstem13, textstem14, textstem15]
-        def custum_fit(x):
-          kataunik = set()
-          for docindex in x:
-            for kata in docindex.split(' '):
-              kataunik.add(kata)
-          vocab = {}
-          for indeks, kata in enumerate(sorted(list(kataunik))):
-            vocab[kata] = indeks
-          return vocab
 
-        vocab = custum_fit(doc)
+        def dict_kata(x):
+            kata_unik = set()
+            for docindex in x:
+                for kata in docindex.split(' '):
+                    kata_unik.add(kata)
+            arr_dictkata = {}
+            for indeks, kata in enumerate(sorted(list(kata_unik))):
+                arr_dictkata[kata] = indeks
+            return arr_dictkata
+
+        arr_dictkata = dict_kata(doc)
         row, col, val = [],[],[]
-        for idx, sentence in enumerate(doc):
-          count_word = dict(Counter(sentence.split(' ')))
-          for word, count in count_word.items():
-            col_idx = vocab.get(word)
-            if col_idx >= 0:
-              row.append(idx)
-              col.append(col_idx)
-              val.append(count)
+        for idx, kalimat in enumerate(doc):
+            hitung_kata = dict(Counter(kalimat.split(' ')))
+            for word, hitung in hitung_kata.items():
+                col_idx = arr_dictkata.get(word)
+                if col_idx >= 0:
+                    row.append(idx)
+                    col.append(col_idx)
+                    val.append(hitung)
 
-        arrvec = csr_matrix((val, (row, col)), shape=(len(doc), len(vocab))).toarray()
+        arrvec = csr_matrix((val, (row, col)), shape=(len(doc), len(arr_dictkata))).toarray()
 
         dot_1 = 0
         dot_2 = 0
