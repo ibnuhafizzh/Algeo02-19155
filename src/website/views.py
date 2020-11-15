@@ -396,8 +396,3 @@ def index(request):
     else:
         print('get ini')
     return render(request,'index.html',context)
-
-def index2(request):
-    return HttpResponse("<h1>Hallo dunia</h1>")
-def about(request):
-    return HttpResponse("<h1>ini about</h1>")
