@@ -44,7 +44,8 @@ python3 manage.py migrate
 windows:
 manage.py migrate
 ```
-kemudian ketik ulang  ``` 
+kemudian ketik ulang  
+```bash 
 mac:
 python3 manage.py runserver
 
