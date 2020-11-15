@@ -1,0 +1,24 @@
+html{
+  scroll-behavior: smooth;
+}
+.jumbotron{
+  height: 350px;
+  background-image: url("/static/img/header_fix.jpg");
+  background-position: center;
+  background-size: cover;
+
+}
+/* .form-inline{
+  margin:auto;
+} */
+.tampilan{
+  margin-bottom: 40px;
+}
+
+.row-centered{
+  margin: auto;
+}
+
+.hidden{
+  visibility: hidden;
+}
