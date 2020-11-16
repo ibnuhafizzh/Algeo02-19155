@@ -201,7 +201,7 @@ def index(request):
 
         sumq = 0
 
-        for i in range (len(vocab)):
+        for i in range (len(arr_dictkata)):
             dot_1 += arrvec[0][i]*arrvec[1][i]
             dot_2 += arrvec[0][i]*arrvec[2][i]
             dot_3 += arrvec[0][i]*arrvec[3][i]
